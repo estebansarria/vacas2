@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0
+}
+.contenedor{
+    display: flex;
+    border: solid 1px;
+    height: 38rem;
+}
+.articulo{
+    display: flex;
+    border: solid 1px;
+    width: 50rem;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+   
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 25rem;
+}
+
+.seccion video{
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+.formulario{
+    display: flex;
+    border: solid 1px;
+    height: 30rem;
+    width: 49rem;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+div{
+    padding: 5px;
+    display: flex;
+    border: solid 1px;
+    margin-top: 5px;
+
+}
+input{
+    width: 90px;
+}

@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .cow-button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .cow-button::before {
+    content: "🐄"; /* Emoji de vaca, puedes reemplazarlo con una imagen si lo prefieres */
+    display: inline-block;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: left 2.0s ease-in-out;
+    font-size: 36px; /* Tamaño más grande */
+  }
+  
+  .cow-button:hover::before {
+    left: 100%;
+  }
+  

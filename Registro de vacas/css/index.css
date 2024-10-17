@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+}
+.header{
+    display: flex;
+    height: 20rem;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/Holstein-in-Europe_header_2021-05-10-083911.jpg);
+    background-size:100% 100% ;
+    color: white;
+}
+.articulo{
+    display: flex;
+    width: 12rem;
+    margin-left: 8%;
+    height: 12rem;
+    background-image: url(/img/Milk\ cow\ logo\ design\ template-PhotoRoom.png-PhotoRoom.png);
+    background-size: 100% 100%;
+}
+
+.menu{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    padding: 5px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.seccion{
+    display: flex;
+    width: 40%;
+    height: 50%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.blog{
+    display: flex;
+    height: 32rem;
+    padding: 10px;
+    margin-bottom: -20px;
+}
+.articulo2{
+    display: flex;
+    text-align: justify;
+    width: 30rem;
+    flex-direction: column;
+    padding: 10px;
+}
+.articulo3{
+    display: flex;
+    width: 50rem;
+    flex-direction: column;
+    padding: 10px;
+}
+.seccion1{
+    display: flex;
+    height: 14rem;
+    background-image: url(/img/twitter-matadero-vacas.jpg);
+    background-size: 100% 100%;
+    
+}
+.categorias{
+    display: flex;
+    height: 10rem;
+    margin-top: 5px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.articulo2 p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #605b5b;
+    margin-top: 5px;
+}
+.articulo2 h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: #424040;
+}
+.articulo4{
+    display: flex;
+    border: solid 1px;
+    width: 15rem;
+    
+}
+
+.card {
+    position: relative;
+    width: 290px;
+    height: 190px;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+
+
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+
+
+  /* styles.css */
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    background-color: #8F9654;
+    padding: 1rem; /* Utiliza unidades relativas */
+    margin-top: 2rem; /* Utiliza unidades relativas */
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; /* Centra el contenido */
+  }
+  
+
+  
+  .footer-info,
+  .footer-contact,
+  .footer-subscribe {
+    flex: 1;
+    padding: 1rem; /* Utiliza unidades relativas */
+    max-width: 100%; /* Ajusta el ancho máximo */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    text-align: center; /* Centra el contenido */
+  }
+ 
+  .footer-info h3,
+  .footer-contact h3,
+  .footer-subscribe h3,
+  .footer-social h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5rem; /* Espacio inferior para separar de otros elementos */
+    color: #fff;
+  }
+  
+  .cow-button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 15rem;
+    background-color: #4CAF50; /* Verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .cow-button::before {
+    content: "🐄"; /* Emoji de vaca, puedes reemplazarlo con una imagen si lo prefieres */
+    display: inline-block;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: left 2.0s ease-in-out;
+    font-size: 36px; /* Tamaño más grande */
+  }
+  
+  .cow-button:hover::before {
+    left: 100%;
+  }
+  
+  
+  
+  .footer-subscribe input[type="email"] {
+    width: 88%;
+    padding: 0.5rem; /* Utiliza unidades relativas */
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: none;
+    
+  }
+  
+ 
+  
+  .fa-brands {
+    font-size: 2rem; /* Utiliza unidades relativas */
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+  
+  .fa-facebook,
+  .fa-twitter {
+    color: #1057e7;
+  }
+  
+  .fa-instagram´{
+    color: red;
+  }
+  
+  /* Media queries para ajustar el diseño en pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+    }
+  
+    .footer-logo img {
+        width: 10px; /* Reduce el ancho de la imagen en pantallas pequeñas */
+        margin-bottom: 0.5rem;
+        border: solid 1px;
+        color: #000;
+    }
+  
+    .footer-info,
+    .footer-contact,
+    .footer-subscribe {
+        max-width: 100%; /* Ajusta el ancho máximo en pantallas pequeñas */
+        margin: 0.5rem 0;
+    }
+    
+  }
+  .cow-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(56, 200, 56);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cow-icon {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('ruta/a/la/imagen/vaca.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: cow-run 1s infinite;
+  }
+  
+  @keyframes cow-run {
+    0% {
+      left: -50px;
+    }
+    100% {
+      left: calc(100% + 50px);
+    }
+  }
